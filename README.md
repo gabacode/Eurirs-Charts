@@ -1,4 +1,4 @@
 # Eurirs-Charts
 Eurirs mortgate time-series
 
-https://observablehq.com/@gabacode/tassi-eurirs
+Observable chart: https://observablehq.com/@gabacode/tassi-eurirs
