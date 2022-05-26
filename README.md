@@ -1,4 +1,4 @@
 # Eurirs-Charts
-Eurirs mortgate time-series
+Eurirs and Euribor mortgages time-series
 
 Observable chart: https://observablehq.com/@gabacode/tassi-eurirs
