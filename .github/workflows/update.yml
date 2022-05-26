@@ -15,7 +15,7 @@ jobs:
         
       - name: Install packages
         run: |-
-          pip install pandas requests beautifulsoup4
+          pip install lxml pandas requests beautifulsoup4
       
       - name: Update Data
         id: update_areas
