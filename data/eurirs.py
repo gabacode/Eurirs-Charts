@@ -41,6 +41,7 @@ def get_euribor_table(url):
 
 
 def get_eurirs():
+    global all_res
     links = []
     url = 'https://www.euribor.it/tassi-storici-eurirs/'
     html = requests.get(url)
@@ -54,10 +55,12 @@ def get_eurirs():
         get_table(url)
     df_res = pd.concat(all_res)
     df_res.to_csv('./data/eurirs.csv', index=False)
+    all_res = []
     print('Done')
 
 
 def get_euribor():
+    global all_res
     links = []
     url = 'https://www.euribor.it/tassi-storici-euribor/'
     html = requests.get(url)
@@ -71,6 +74,7 @@ def get_euribor():
         get_euribor_table(url)
     df_res = pd.concat(all_res)
     df_res.to_csv('./data/euribor.csv', index=False)
+    all_res = []
     print('Done')
 
 
