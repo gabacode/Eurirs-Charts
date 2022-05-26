@@ -43,5 +43,5 @@ for link in available_links:
     get_table(link)
 
 df_res = pd.concat(all_res)
-df_res.to_csv('eurirs.csv', index=False)
+df_res.to_csv('./data/eurirs.csv', index=False)
 print('Done')
